@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.response {
+  width: 100%;
+  max-width: 450px;
+  margin: auto;
+}
+
+[routerpage] {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+.main-contents {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.main-contents .navbar-list {
+  user-select: none;
+  width: 300px;
+  height: 100%;
+  border-right: 1px solid #f1f1f1ff;
+}
+.main-contents .navbar-list a {
+  display: block;
+  cursor: pointer;
+  padding: 8px 12px;
+  transition: .2s;
+}
+.main-contents .navbar-list a:hover {
+  background-color: #0059ff;
+  color: #ffffff;
+}
+
+.main-contents .container-items {
+  width: calc(100% - 300px);
+}
+
+.list-items-shop {
+  width: 100%;
+  margin: 3px;
+}
+.list-items-shop .items-shop {
+  user-select: none;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 5px;
+  border-radius: 3px;
+  overflow: hidden;
+  border: 1px solid #e2e2e2;
+  margin-bottom: 10px;
+}
+.list-items-shop .items-shop .items-details {
+  padding: 4px 12px 9px 12px;
+}
+.list-items-shop .items-shop .items-details button {
+  position: absolute;
+  margin-top: -56px;
+  background-color: #0059ff;
+  border: none;
+  outline: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 29px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+.list-items-shop .items-shop .items-details button:active {
+  background-color: #003fb4;
+}
+
+.list-items-shop .items-shop .items-details span {
+  color: #525252;
+}
+
+
+
+.payment-details {
+  width: 100%;
+  user-select: none;
+}
+.payment-details .payment-headers {
+  width: 100%;
+  height: 60px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 9px;
+  padding: 10px;
+  padding-right: 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.payment-details .payment-headers img {
+  margin-right: 10px;
+}
+.payment-details .payment-headers p {
+  width: calc(100% - 60px);
+}
+.payment-details .payment-headers button {
+  width: 60px;
+  height: 60px;
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.payment-details .payment-checkout {
+  margin-top: 20px;
+  width: 100%;
+  list-style: none;
+}
+.payment-details .payment-checkout li {
+  width: 100%;
+  height: 50px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 9px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+}
+.payment-details .payment-checkout li button[action-payment="remove-items"] {
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  color: #ff0000;
+  font-size: 20px;
+}
+.payment-details .payment-checkout li .payment-items-controller {
+  width: 60px;
+  height: 50px;
+  display: flex;
+}
+.payment-details .payment-checkout li .payment-items-controller button {
+  width: 50%;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+}

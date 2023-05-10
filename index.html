@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="in">
+<head>
+  <meta charset="UTF-8">
+  <title>Warunge Simbahku (Test Project)</title>
+  <link rel="stylesheet" href="./dist/main.css">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="./favicon.ico">
+  <link rel="manifest" href="./manifest.json">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" async></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="main-contents">
+    <div class="navbar-list" routerlist="app-page">
+      <a routerpush="home">Beranda</a>
+      <a routerpush="checkout">Keranjang</a>
+    </div>
+    <div class="container-items" routerapp="app-page">
+      <div class="response" routerpage="home" style="display: block;">
+        <div class="list-items-shop">
+        </div>
+      </div>
+      <div class="response" routerpage="checkout">
+        <div class="payment-details">
+          <div class="payment-headers">
+            <p>Total: <b>Rp 30.000</b></p>
+            <button><i class="fa-solid fa-check"></i></button>
+          </div>
+          <ul class="payment-checkout">
+            <li>
+              <button action-payment="remove-items" id-items="">
+                <i class="fa-regular fa-trash-can"></i>
+              </button>
+              <div class="payment-items-controller">
+                <button><i class="fa-solid fa-plus"></i></button>
+                <button><i class="fa-solid fa-minus"></i></button>
+              </div>
+              <div class="payment-items-contents">
+                <b>{NAME_ITEMS}</b>
+                <span types="prices">Rp 10.000 / 3</span>
+              </div>
+            </li>
+            <li>
+              <button action-payment="remove-items" id-items="">
+                <i class="fa-regular fa-trash-can"></i>
+              </button>
+              <div class="payment-items-controller">
+                <button><i class="fa-solid fa-plus"></i></button>
+                <button><i class="fa-solid fa-minus"></i></button>
+              </div>
+              <div class="payment-items-contents">
+                <b>{NAME_ITEMS}</b>
+                <span types="prices">Rp 10.000 / 3</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./dist/router.js"></script>
+  <script src="./dist/app.js"></script>
+  <script>
+    // Cacheing PWA To Offline Mode !
+    // if ('serviceWorker' in navigator) {
+    //   window.addEventListener('load', function() {
+    //     navigator.serviceWorker.register('/sw.js');
+    //   })
+    // }
+  </script>
+</body>
+</html>
